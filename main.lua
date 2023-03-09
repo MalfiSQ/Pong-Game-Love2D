@@ -1,19 +1,23 @@
 require('src/player')
 require('src/ball')
+require('src/ai')
 
 function love.load()
     player.load()
     ball.load()
+    AI.load()
 end
 
 function love.update(dt)
     player.update(dt)
     ball.update(dt)
+    AI.update(dt)
 end
 
 function love.draw()
     player.draw()
     ball.draw()
+    AI.draw()
 end
 
 -- Functions | AABB Collision
